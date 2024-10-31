@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>P49 Coffee Shop</title>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <a href="#" class="logo"></a>
+
+        <!--Menu Icon-->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!--links-->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#customers">Customers</a></li>
+        </ul>
+        <div class="header-icon">
+            <i class='bx bx-cart-alt' ></i>
+            <i class='bx bx-search' id="search-icon" ></i>
+        </div>
+        
+        <!--search box-->
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search">
+        </div>
+    </header>
+    <!-- Sidebar for cart -->
+<div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <span class="close-cart" id="close-cart">&times;</span>
+    </div>
+    <div class="cart-items" id="cart-items">
+        <!-- Cart items will be appended here -->
+    </div>
+    <div class="cart-footer">
+        <h3>Total: ₱<span id="cart-total">0</span></h3>
+        <button class="btn checkout-btn">Checkout</button>
+    </div>
+</div>
+
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Fast Delivery <br>to Your Doorstep</h1>
+            <p>Join us in our cozy haven where stories are shared and friendships bloom. Brewtopia isn’t just a coffee shop—it’s your home away from home.</p>
+            <a href="#products" class="btn">Order Now</a>
+        </div>
+        <div class="home-img">
+            <img src="lol.png" alt="">
+        </div>
+    </section>
+    <!--about-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="shop.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Our History</h2>
+            <p>Brewtopia Coffee Shop was born in 2010 from Neol Abuyo’s dream to create a sanctuary for coffee lovers in the bustling city. Starting as a cozy café, Brewtopia quickly became a community hub where stories were shared over expertly brewed cups. Neol’s passion for quality and connection drove him to travel the world, forging direct trade relationships with farmers to bring the finest beans to his shop.</p>
+            <p>The café’s commitment to sourcing and sustainability earned it a loyal following, leading to the opening of new locations. Each Brewtopia retained the original's charm, decorated with memorabilia from Neol’s travels and filled with the comforting aroma of fresh coffee. Today, Brewtopia is a beloved destination, offering unique blends and seasonal specials, while maintaining its core values of quality, community, and connection.</p>
+
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+    </section>
+    <!--products-->
+    <section class="products" id="products">
+        <div class="heading">
+            <h2>Our popular products</h2>
+        </div>
+        <!--Container-->
+        <div class="products-container">
+            <div class="box" id="product1">
+                <img src="hazelnut.jpg" alt="">
+                <h3>Hazelnut Coffee</h3>
+                <div class="content">
+                    <span>₱150</span>
+                    <a href="#" class="add-to-cart-btn" data-product="hazelnut" data-price="150">Add to cart</a>
+                </div>
+            </div><div class="box" id="product2">
+                <img src="cortado.jpg" alt="">
+                <h3>Cortado Coffee</h3>
+                <div class="content">
+                    <span>₱150</span>
+                    <a href="#" class="add-to-cart-btn" data-product="cortado" data-price="150">Add to cart</a>
+                </div>
+            </div><div class="box" id="product3">
+                <img src="caramel macchiato.jpg" alt="">
+                <h3>Caramel Macchiato Coffee</h3>
+                <div class="content">
+                    <span>₱150</span>
+                    <a href="#" class="add-to-cart-btn" data-product="caramel" data-price="150">Add to cart</a>
+                </div>
+            </div><div class="box" id="product4">
+                <img src="flat white.jpg" alt="">
+                <h3>Flat White Coffee</h3>
+                <div class="content">
+                    <span>₱150</span>
+                    <a href="#" class="add-to-cart-btn" data-product="flat-white" data-price="150">Add to cart</a>
+                </div>
+            </div><div class="box" id="product5">
+                <img src="affogato.jpg" alt="">
+                <h3>Affogato Coffee</h3>
+                <div class="content">
+                    <span>₱150</span>
+                    <a href="#" class="add-to-cart-btn" data-product="affogato" data-price="150">Add to cart</a>
+                </div>
+            </div><div class="box" id="product6">
+                <img src="cappuccino.jpg" alt="">
+                <h3>Cappuccino Coffee</h3>
+                <div class="content">
+                    <span>₱150</span>
+                    <a href="#" class="add-to-cart-btn" data-product="cappuccino" data-price="150">Add to cart</a>
+                </div>
+            </div><div class="box" id="product7">
+                <img src="Americano.jpg" alt="">
+                <h3>Americano Coffee</h3>
+                <div class="content">
+                    <span>₱150</span>
+                    <a href="#" class="add-to-cart-btn" data-product="americano" data-price="150">Add to cart</a>
+                </div>
+            </div><div class="box" id="product8">
+                <img src="Cinnamon-Mocha.jpg" alt="">
+                <h3>Cinnamon Mocha Coffee</h3>
+                <div class="content">
+                    <span>₱150</span>
+                    <a href="#" class="add-to-cart-btn" data-product="cinnamon" data-price="150">Add to cart</a>
+                </div>
+            </div><div class="box" id="product9">
+                <img src="OatMilkLatte.jpg" alt="">
+                <h3>Oat-Milk Latte Coffee</h3>
+                <div class="content">
+                    <span>₱150</span>
+                    <a href="#" class="add-to-cart-btn" data-product="oat-milk" data-price="150">Add to cart</a>
+                </div>
+            </div><div class="box" id="product10">
+                <img src="matcha-coffee-1.jpg">
+                <h3>Matcha Coffee</h3>
+                <div class="content">
+                    <span>₱150</span>
+                    <a href="#" class="add-to-cart-btn" data-product="matcha" data-price="150">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--customer-->
+    <section class="customers" id="customers">
+        <div class="heading">
+            <h2>Our Customer's</h2>
+        </div>
+        <!--Container-->
+        <div class="customers-container">
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>"Just had Brewtopia's Matcha Coffee and it's a match-a made in heaven! The earthy matcha flavor combined with creamy milk is both refreshing and energizing. A must-try for matcha lovers! 🍵✨"</p>
+                <h2>@sad_cat</h2>
+                <img src="m1.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>"Caramel Macchiato from Brewtopia is pure bliss! The creamy caramel swirls perfectly complement the bold espresso, making every sip a delight. It's like dessert in a cup! 🍮☕"</p>
+                <h2>@Edmar Pantoja</h2>
+                <img src="Edmar.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>"Cortado Coffee from Brewtopia is an absolute game-changer! The perfect balance of espresso and steamed milk creates a smooth, indulgent experience that I can't get enough of. 10/10 recommend!"</p>
+                <h2>@Beluga_mwehehe</h2>
+                <img src="m2.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>"Just tried Brewtopia's Hazelnut Coffee and I'm hooked! The rich, nutty flavor is like a warm hug in a cup. Definitely my new favorite morning ritual! ☕🌰"</p>
+                <h2>@opopopopopop</h2>
+                <img src="m3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+    <div class="footer-box">
+        <h2>Coffee Shop</h2>
+        <p>Ready to awaken your senses and elevate your coffee game? Join us on our social media journey for a daily dose of inspiration, behind-the-scenes moments, and exclusive offers. Discover the magic of Brewtopia and let's brew up some unforgettable memories together! ☕✨</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-tiktok' ></i> </a>
+        </div>
+    </div>
+    <div class="footer-box">
+        <h3>Support</h3>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Terms Of Use</a></li>
+    </div>
+    <div class="footer-box">
+        <h3>View Guides</h3>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog Posts</a></li>
+        <li><a href="#">Our Branches</a></li>
+    </div>
+    <div class="footer-box">
+        <h3>Contact</h3>
+        <div class="contact">
+            <span><i class='bx bxs-map' ></i>29 Otero Ave, Mabayuan Olongapo City</span>
+            <span><i class='bx bxs-phone' ></i>09100525534</span>
+            <span><i class='bx bxs-envelope' ></i>Brewtopia@shop.com</span>
+        </div>
+    </div>
+        </section>
+        <!--Copyright-->
+        <div class="copyright">
+            <p>&#169; Kalaklan All Rights Reserved</p>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
